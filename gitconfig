@@ -1,0 +1,25 @@
+[user]
+	name = Ysc
+	email = syan@ovice.co
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+	insteadOf = https://github.com/
+[http]
+	postBuffer = 157286400
+	#proxy = http://127.0.0.1:7890
+	#sslVerify = false
+	#version = HTTP/1.1
+[core]
+	autocrlf = input
+	compression = 0
+	packedGitLimit = 512m
+    packedGitWindowSize = 512m
+[pack]
+	window = 1
+    deltaCacheSize = 2047m
+    packSizeLimit = 2047m
+    windowMemory = 2047m

@@ -1,0 +1,19 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    # If the source location is omitted or set to null, Dotbot will use the basename of the destination, with a leading . stripped if present.
+    ~/.zshrc:
+    ~/.zshenv:
+    ~/.itermocil:
+    ~/.tmux.conf:
+    ~/.gitconfig:
+
+- create:
+    - ~/customization-folder
+
+#- shell:
+#    - [git submodule update --init --recursive, Installing submodules]

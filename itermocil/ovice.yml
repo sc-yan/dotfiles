@@ -1,0 +1,14 @@
+name: ovice
+windows:
+  - name: ovice-service
+    layout: tiled
+    root: ~/ovice-projects
+    panes:
+      - commands:
+          - cd ovice-ui-local/packages/react-app
+          - yarn start
+      - commands:
+          - cd ex-core
+          - export PORT=4050
+          - export API_KEY=
+          - iex -S mix phx.server
