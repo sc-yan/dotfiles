@@ -125,4 +125,13 @@ alias kc-get-ct="kubectl config get-contexts"
 
 #customize prompt
 #PROMPT='%(?:%{%}➜ :%{%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+PROMPT+='level: %L %#'
+# this is right prompt. it only shows the current time
 RPROMPT='%*'
+
+# alias ls='ls -lAFhG'
+alias ls='eza -lAhGF --git'
+alias eza='eza -lAhGF --git'
+# bat can be used as a colorizing pager for man, by setting the MANPAGER environment variable
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
