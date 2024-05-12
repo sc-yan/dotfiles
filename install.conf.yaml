@@ -11,6 +11,9 @@
     ~/.itermocil:
     ~/.tmux.conf:
     ~/.gitconfig:
+    ~/.config/bat:
+      create: true
+      path: config/bat
 
 - create:
     - ~/customization-folder

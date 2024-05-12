@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+echo "Setting up environment variables from zshrc..."
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -135,3 +135,7 @@ alias eza='eza -lAhGF --git'
 # bat can be used as a colorizing pager for man, by setting the MANPAGER environment variable
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+
+# SSL keys
+export LOCALHOST_SSL_CERT="$HOME/Certs/localhost.crt"
+export LOCALHOST_SSL_KEY="$HOME/Certs/localhost.key"
