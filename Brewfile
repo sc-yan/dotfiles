@@ -12,8 +12,6 @@ tap "tomanthony/brews"
 brew "openssl@3"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
-# GitOps Continuous Delivery for Kubernetes
-brew "argocd"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # GNU multiple precision arithmetic library
@@ -120,16 +118,8 @@ brew "jq"
 brew "k6"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
-# Production Grade K8s Installation, Upgrades, and Management
-brew "kops"
-# Static analysis tool for Kubernetes YAML files and Helm charts
-brew "kube-linter"
-# FAST Kubernetes manifests validator, with support for Custom Resources!
-brew "kubeconform"
 # Java-based project management
 brew "maven"
-# Run a Kubernetes cluster locally
-brew "minikube"
 # Show ps output as a tree
 brew "pstree"
 # Python version management
@@ -140,12 +130,8 @@ brew "ripgrep"
 brew "sops"
 # Implementation of the Secure Real-time Transport Protocol
 brew "srtp"
-# Thin wrapper for Terraform e.g. for locking state
-brew "terragrunt"
 # Terraform version manager inspired by rbenv
 brew "tfenv"
-# Linter for Terraform files
-brew "tflint"
 # Terminal multiplexer
 brew "tmux"
 # Executes a program periodically, showing output fullscreen
@@ -154,20 +140,10 @@ brew "watch"
 brew "watchman"
 # Internet file retriever
 brew "wget"
-# HTTP, HTTP2, HTTPS, Websocket debugging proxy
-brew "whistle"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Kubectl Argo Rollouts Plugin.
 brew "argoproj/tap/kubectl-argo-rollouts"
-# Sentry command-line client for some generic tasks
-brew "getsentry/tools/sentry-cli"
-# Packer
-brew "hashicorp/tap/packer"
-# A Terraform / OpenTofu state migration tool for GitOps
-brew "minamijoyo/tfmigrate/tfmigrate"
-# Automated code review tool integrated with any code analysis tools regardless of programming language.
-brew "reviewdog/tap/reviewdog"
 # Allows you setup pre-configured layouts of panes in iTerm2
 brew "tomanthony/brews/itermocil"
 # Password manager that keeps all passwords secure behind one password
@@ -178,18 +154,10 @@ cask "another-redis-desktop-manager"
 cask "asana"
 # Cloud storage service
 cask "baidunetdisk"
-# Official bilibili video streaming and sharing platform
-cask "bilibili"
-# Mobile gaming platform
-cask "bluestacks"
-# E-books management software
-cask "calibre"
 # Voice and text chat software
 cask "discord"
 # This cask follows releases from https://github.com/dotnet/core/tree/master
 cask "dotnet-sdk3-1-300"
-# Tool to write Fedora images to portable media files
-cask "fedora-media-writer"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
@@ -198,14 +166,8 @@ cask "google-drive"
 cask "iina"
 # Tool for multi-language users
 cask "input-source-pro"
-# Open-source epub reader
-cask "koodo-reader"
-# Project management software
-cask "lark"
 # App to manage software development and track bugs
 cask "linear-linear"
-# Screen and video recording software
-cask "loom"
 # Controls and monitors all fans on Apple computers
 cask "macs-fan-control"
 # Reverse proxy, secure introspectable tunnels to localhost
@@ -214,8 +176,6 @@ cask "ngrok"
 cask "nordvpn"
 # App to write, plan, collaborate, and get organised
 cask "notion"
-# GUI for managing and using Apache Kafka clusters
-cask "offset-explorer"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Collaboration platform for API development
