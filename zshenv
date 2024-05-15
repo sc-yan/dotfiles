@@ -5,6 +5,9 @@
 echo "Setting up environment variables from zshenv..."
 
 function exists() {
+  # command -v is a POSIX compliant way to check if a command exists, similar to which
+  # redirect stdout and stderr to /dev/null
   command -v $1 >/dev/null 2>&1
+  # command -v $1 1>/dev/null 2>/dev/null
 }
 

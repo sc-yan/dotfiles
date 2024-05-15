@@ -125,7 +125,6 @@ alias kc-get-ct="kubectl config get-contexts"
 
 #customize prompt
 #PROMPT='%(?:%{%}➜ :%{%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
-PROMPT+='level: %L %#'
 # this is right prompt. it only shows the current time
 RPROMPT='%*'
 
@@ -139,3 +138,11 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # SSL keys
 export LOCALHOST_SSL_CERT="$HOME/Certs/localhost.crt"
 export LOCALHOST_SSL_KEY="$HOME/Certs/localhost.key"
+alias trail='<<<${(F)path}'
+alias bbd='brew bundle dump --force --describe'
+export NULLCMD='bat'
+
+typeset -U path
+path=(
+  $path
+)
