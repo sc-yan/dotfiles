@@ -15,3 +15,5 @@ echo "...skipping"
 fi
 done
 exit 0
+
+# TODO three finger drag script
