@@ -18,12 +18,6 @@ brew "automake"
 brew "gmp"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
-# Text processing system for reStructuredText
-brew "docutils"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # C library implementing the SSH2 protocol
@@ -36,34 +30,32 @@ brew "boost"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
-# Open source suite of directory software
-brew "openldap"
-# Tool for downloading RTMP streaming media
-brew "rtmpdump"
-# Libraries to talk to Microsoft SQL Server and Sybase databases
-brew "freetds"
-# Library for encoding and decoding .avif files
-brew "libavif"
-# Postgres C API library
-brew "libpq"
+# Text processing system for reStructuredText
+brew "docutils"
 # Asynchronous event library
 brew "libevent"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
-# Shared library for Watchman and Eden projects
-brew "edencommon"
-# Command-line tool to interact with exercism.io
-brew "exercism"
 # C++14 implementation of the TLS-1.3 standard
 brew "fizz"
 # Modular, composable client/server abstractions framework
 brew "wangle"
-# Thrift functions for querying information from a service
-brew "fb303"
 # Facebook's branch of Apache Thrift, including a new C++ server
 brew "fbthrift"
+# Thrift functions for querying information from a service
+brew "fb303"
+# Shared library for Watchman and Eden projects
+brew "edencommon"
+# Command-line tool to interact with exercism.io
+brew "exercism"
+# Modern, maintained replacement for ls
+brew "eza"
 # Library to load and enumerate PKCS#11 modules
 brew "p11-kit"
 # Validating, recursive, caching DNS resolver
@@ -82,12 +74,20 @@ brew "srt"
 brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# XSL-FO print formatter for making PDF or PS documents
+brew "fop"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
 # GNU awk utility
 brew "gawk"
+# Library for encoding and decoding .avif files
+brew "libavif"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # GitHub command-line tool
 brew "gh"
+# Open source suite of directory software
+brew "openldap"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Generate introspection data for GObject libraries
@@ -118,6 +118,8 @@ brew "jq"
 brew "k6"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
+# Postgres C API library
+brew "libpq"
 # Java-based project management
 brew "maven"
 # Show ps output as a tree
@@ -126,6 +128,8 @@ brew "pstree"
 brew "pyenv"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Tool for downloading RTMP streaming media
+brew "rtmpdump"
 # Editor of encrypted files
 brew "sops"
 # Implementation of the Secure Real-time Transport Protocol
@@ -140,8 +144,14 @@ brew "watch"
 brew "watchman"
 # Internet file retriever
 brew "wget"
+# Cross-platform C++ GUI toolkit
+brew "wxwidgets"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # Kubectl Argo Rollouts Plugin.
 brew "argoproj/tap/kubectl-argo-rollouts"
 # Allows you setup pre-configured layouts of panes in iTerm2
@@ -156,8 +166,8 @@ cask "asana"
 cask "baidunetdisk"
 # Voice and text chat software
 cask "discord"
-# This cask follows releases from https://github.com/dotnet/core/tree/master
-cask "dotnet-sdk3-1-300"
+# Web browser
+cask "firefox"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
@@ -166,6 +176,10 @@ cask "google-drive"
 cask "iina"
 # Tool for multi-language users
 cask "input-source-pro"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Controls and monitors all fans on Apple computers
@@ -192,12 +206,18 @@ cask "slack"
 cask "stats"
 # Video game digital distribution service
 cask "steam"
+# Text editor for code, markup and prose
+cask "sublime-text"
+# Messaging app with a focus on speed and security
+cask "telegram"
 # Web browser focusing on security
 cask "tor-browser"
 # Open-source code editor
 cask "visual-studio-code"
 # Video conferencing software
 cask "voov-meeting"
+# Free messaging and calling application
+cask "wechat"
 # Native desktop client for WhatsApp
 cask "whatsapp"
 # Network protocol analyzer

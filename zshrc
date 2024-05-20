@@ -71,9 +71,10 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+# install zsh-autosuggestions with brew
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# install zsh-syntax-highlighting with brew https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,8 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# this loads krew kubectl plugin
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+# # this loads krew kubectl plugin
+# export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
@@ -120,7 +121,9 @@ alias kc-get-ct="kubectl config get-contexts"
 
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
-. /usr/local/opt/asdf/libexec/asdf.sh
+# https://formulae.brew.sh/formula/asdf
+. $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
 # export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 #customize prompt

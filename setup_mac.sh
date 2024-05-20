@@ -17,3 +17,4 @@ done
 exit 0
 
 # TODO three finger drag script
+# TODO mac lock screen script. System Settings -> lock screen
