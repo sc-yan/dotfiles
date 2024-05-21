@@ -11,6 +11,7 @@
     ~/.itermocil:
     ~/.tmux.conf:
     ~/.gitconfig:
+    ~/.ideavimrc:
     ~/.config/bat:
       create: true
       path: config/bat
@@ -23,3 +24,4 @@
       stdout: true
       stderr: true
     # - [git submodule update --init --recursive, Installing submodules]
+    # sudo ln -s $(brew --prefix)/opt/libpq/bin/psql /usr/local/bin/psql

@@ -122,6 +122,8 @@ brew "k9s"
 brew "libpq"
 # Java-based project management
 brew "maven"
+# Open source relational database management system
+brew "mysql"
 # Show ps output as a tree
 brew "pstree"
 # Python version management

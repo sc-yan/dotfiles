@@ -149,3 +149,8 @@ typeset -U path
 path=(
   $path
 )
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=1000000
+SAVEHIST=1000000
+# Don't record an entry that was just recorded again.
+setopt HIST_IGNORE_DUPS
