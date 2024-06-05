@@ -118,8 +118,12 @@ brew "jq"
 brew "k6"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
 # Postgres C API library
 brew "libpq"
+# Mac App Store command-line interface
+brew "mas"
 # Java-based project management
 brew "maven"
 # Open source relational database management system
@@ -184,8 +188,10 @@ cask "iterm2"
 cask "jetbrains-toolbox"
 # App to manage software development and track bugs
 cask "linear-linear"
-# Controls and monitors all fans on Apple computers
-cask "macs-fan-control"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Office suite
+cask "microsoft-office"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # VPN client for secure internet access and private browsing
@@ -212,6 +218,8 @@ cask "steam"
 cask "sublime-text"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# VPN and WiFi proxy
+cask "thunder"
 # Web browser focusing on security
 cask "tor-browser"
 # Open-source code editor
@@ -228,6 +236,12 @@ cask "wireshark"
 cask "wkhtmltopdf"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 vscode "42crunch.vscode-openapi"
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"

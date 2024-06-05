@@ -137,6 +137,7 @@ alias eza='eza -lAhGF --git'
 # bat can be used as a colorizing pager for man, by setting the MANPAGER environment variable
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # SSL keys
 export LOCALHOST_SSL_CERT="$HOME/Certs/localhost.crt"

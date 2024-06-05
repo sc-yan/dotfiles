@@ -18,3 +18,9 @@ exit 0
 
 # TODO three finger drag script
 # TODO mac lock screen script. System Settings -> lock screen
+# TODO show HD drive on desktop. finder -> settings -> show HD drive
+# TODO finder. show all file extensions. finder -> settings -> advance -> show all file extensions
+# TODO finder. show hidden files. cmd + shift + . or defaults write com.apple.finder AppleShowAllFiles True; killall Finder
+# defaults write com.apple.finder AppleShowAllFiles False; killall Finder
+# Those will unhide all, for individual files paste       sudo chflags nohidden
+
