@@ -12,6 +12,7 @@
     ~/.tmux.conf:
     ~/.gitconfig:
     ~/.ideavimrc:
+    ~/.tool-versions:
     ~/.config/bat:
       create: true
       path: config/bat
