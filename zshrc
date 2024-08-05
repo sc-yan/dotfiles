@@ -155,3 +155,9 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 # Don't record an entry that was just recorded again.
 setopt HIST_IGNORE_DUPS
+
+# https://github.com/processone/fast_tls
+export LDFLAGS="-L/opt/homebrew/opt/openssl/lib"
+export CFLAGS="-I/opt/homebrew/opt/openssl/include/"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl/include/"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
