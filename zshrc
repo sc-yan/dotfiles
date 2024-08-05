@@ -151,8 +151,8 @@ path=(
   $path
 )
 HISTFILE="$HOME/.zsh_history"
-HISTSIZE=1000000
-SAVEHIST=1000000
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
 # Don't record an entry that was just recorded again.
 setopt HIST_IGNORE_DUPS
 
