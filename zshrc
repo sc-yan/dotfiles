@@ -158,6 +158,11 @@ setopt HIST_IGNORE_DUPS
 
 # https://github.com/processone/fast_tls
 export LDFLAGS="-L/opt/homebrew/opt/openssl/lib"
-export CFLAGS="-I/opt/homebrew/opt/openssl/include/"
+# export CFLAGS="-I/opt/homebrew/opt/openssl/include/"
+# this is to install erlang with asdf
+export CFLAGS="-O2 -g"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl/include/"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# current zsh history file has 1186 lines
+# this is the first entry:   : 1722176351:0;ps aux | grep storm
