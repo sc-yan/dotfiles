@@ -151,8 +151,10 @@ path=(
   $path
 )
 HISTFILE="$HOME/.zsh_history"
-HISTSIZE=999999999
+# https://www.zsh.org/mla/users/2013/msg00689.html
+HISTSIZE=9223372036854775807
 SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
 # Don't record an entry that was just recorded again.
 setopt HIST_IGNORE_DUPS
 
