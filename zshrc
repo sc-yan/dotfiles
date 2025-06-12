@@ -109,7 +109,6 @@ source $ZSH/oh-my-zsh.sh
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
-eval "$(pyenv init -)"
 alias k="kubectl"
 alias kc-use-ct="kubectl config use-context"
 alias kc-get-ct="kubectl config get-contexts"
@@ -121,8 +120,11 @@ alias kc-get-ct="kubectl config get-contexts"
 
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
+export ASDF_DATA_DIR="$HOME/.asdf"
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
 # https://formulae.brew.sh/formula/asdf
-. $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
+# remove this https://asdf-vm.com/guide/upgrading-to-v0-16.html#breaking-changes
+# . $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
 # . /opt/homebrew/opt/asdf/libexec/asdf.sh
 # export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 

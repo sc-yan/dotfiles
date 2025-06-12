@@ -12,12 +12,16 @@ tap "tomanthony/brews"
 brew "openssl@3"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
-# Tool for generating GNU Standards-compliant Makefiles
-brew "automake"
-# GNU multiple precision arithmetic library
-brew "gmp"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # C library implementing the SSH2 protocol
@@ -30,12 +34,10 @@ brew "boost"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
+# GNU multiple precision arithmetic library
+brew "gmp"
 # Text processing system for reStructuredText
 brew "docutils"
 # Asynchronous event library
@@ -74,6 +76,8 @@ brew "srt"
 brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Development kit for the Java programming language
+brew "openjdk"
 # XSL-FO print formatter for making PDF or PS documents
 brew "fop"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
@@ -82,12 +86,12 @@ brew "freetds"
 brew "gawk"
 # Library for encoding and decoding .avif files
 brew "libavif"
+# Graphics library to dynamically manipulate images
+brew "gd"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # GitHub command-line tool
 brew "gh"
-# Open source suite of directory software
-brew "openldap"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Generate introspection data for GObject libraries
@@ -120,14 +124,20 @@ brew "k6"
 brew "k9s"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Conversion library
+brew "libiconv"
 # Postgres C API library
 brew "libpq"
+# YAML Parser
+brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
 # Java-based project management
 brew "maven"
 # Open source relational database management system
 brew "mysql"
+# Open source suite of directory software
+brew "openldap"
 # Show ps output as a tree
 brew "pstree"
 # Python version management
@@ -174,10 +184,16 @@ cask "baidunetdisk"
 cask "discord"
 # Web browser
 cask "firefox"
+# PDF Editor
+cask "foxit-pdf-editor"
 # Web browser
 cask "google-chrome"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
 # Client for the Google Drive storage service
 cask "google-drive"
+# UI for Kubernetes
+cask "headlamp"
 # Free and open-source media player
 cask "iina"
 # Tool for multi-language users
@@ -206,6 +222,8 @@ cask "postman"
 cask "qq"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Tunneling proxy
+cask "shadowsocksx-ng"
 # Instant messaging application focusing on security
 cask "signal"
 # Team communication and collaboration software
@@ -247,20 +265,16 @@ vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
 vscode "formulahendry.code-runner"
+vscode "github.codespaces"
 vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "jakebecker.elixir-ls"
 vscode "lokalise.i18n-ally"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
-vscode "ms-vscode.cmake-tools"
-vscode "ms-vscode.cpptools"
-vscode "ms-vscode.cpptools-extension-pack"
-vscode "ms-vscode.cpptools-themes"
 vscode "ms-vscode.remote-explorer"
 vscode "pantajoe.vscode-elixir-credo"
 vscode "redhat.vscode-yaml"
-vscode "twxs.cmake"
 vscode "vscodevim.vim"
 vscode "yzhang.markdown-all-in-one"
 vscode "zoellner.openapi-preview"
