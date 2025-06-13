@@ -184,8 +184,6 @@ cask "baidunetdisk"
 cask "discord"
 # Web browser
 cask "firefox"
-# PDF Editor
-cask "foxit-pdf-editor"
 # Web browser
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
