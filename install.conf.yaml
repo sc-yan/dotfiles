@@ -24,5 +24,11 @@
     - command: ./setup_homebrew.zsh
       stdout: true
       stderr: true
+    - command: ./setup_zsh.zsh
+      stdout: true
+      stderr: true
+    - command: ./setup_mac.zsh
+      stdout: true
+      stderr: true
     # - [git submodule update --init --recursive, Installing submodules]
     # sudo ln -s $(brew --prefix)/opt/libpq/bin/psql /usr/local/bin/psql

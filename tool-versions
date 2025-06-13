@@ -1,5 +1,5 @@
-elixir 1.18.1
-erlang 27.2
+elixir 1.18.4
+erlang 27.3.4
 nodejs 18.20.2
 adoptopenjdk-jre-24.0.1+9
 python 3.11.5
