@@ -1,8 +1,6 @@
 tap "argoproj/tap"
 tap "getsentry/tools"
 tap "hashicorp/tap"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "isen-ng/dotnet-sdk-versions"
 tap "minamijoyo/tfmigrate"
 tap "reviewdog/tap"
@@ -36,8 +34,6 @@ brew "glib"
 brew "cairo"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
-# GNU multiple precision arithmetic library
-brew "gmp"
 # Text processing system for reStructuredText
 brew "docutils"
 # Asynchronous event library
@@ -58,6 +54,8 @@ brew "edencommon"
 brew "exercism"
 # Modern, maintained replacement for ls
 brew "eza"
+# GNU multiple precision arithmetic library
+brew "gmp"
 # Library to load and enumerate PKCS#11 modules
 brew "p11-kit"
 # Validating, recursive, caching DNS resolver
@@ -164,6 +162,8 @@ brew "wget"
 brew "wxwidgets"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
@@ -204,8 +204,6 @@ cask "jetbrains-toolbox"
 cask "linear-linear"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
-# Office suite
-cask "microsoft-office"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # VPN client for secure internet access and private browsing
@@ -247,17 +245,9 @@ cask "wechat"
 # Native desktop client for WhatsApp
 cask "whatsapp"
 # Network protocol analyzer
-cask "wireshark"
-# HTML to PDF renderer
-cask "wkhtmltopdf"
+cask "wireshark-app"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "LINE", id: 539883307
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 vscode "42crunch.vscode-openapi"
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
