@@ -74,7 +74,7 @@ ZSH_THEME="robbyrussell"
 # install zsh-autosuggestions with brew
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # install zsh-syntax-highlighting with brew https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
 
@@ -167,6 +167,4 @@ export LDFLAGS="-L/opt/homebrew/opt/openssl/lib"
 export CFLAGS="-O2 -g"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl/include/"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-# current zsh history file has 1186 lines
-# this is the first entry:   : 1722176351:0;ps aux | grep storm
+echo "zshrc file loaded"

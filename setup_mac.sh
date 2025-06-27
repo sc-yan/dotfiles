@@ -16,11 +16,13 @@ fi
 done
 exit 0
 
-# TODO three finger drag script
+# TODO three finger drag script. System Settings -> Accessibility -> Pointer Control -> Trackpad Options -> Enable dragging -> three finger drag
+# TODO tap to click script. System Settings -> trackpad -> Point & Click -> Tap to click
+# TODO secondary click script. System Settings -> trackpad -> Point & Click -> Secondary click
 # TODO mac lock screen script. System Settings -> lock screen
 # TODO show HD drive on desktop. finder -> settings -> show HD drive
 # TODO finder. show all file extensions. finder -> settings -> advance -> show all file extensions
 # TODO finder. show hidden files. cmd + shift + . or defaults write com.apple.finder AppleShowAllFiles True; killall Finder
 # defaults write com.apple.finder AppleShowAllFiles False; killall Finder
 # Those will unhide all, for individual files paste       sudo chflags nohidden
-
+# show / turn off dock: command + option + d
