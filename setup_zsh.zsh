@@ -1,8 +1,14 @@
 #!/usr/bin/env zsh
 # installation is unnecessary since zsh is installed by brew
-echo "Installing zsh..."
+echo "Setting up zsh......"
+
 # install oh-my-zsh
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ -d "$HOME/.oh-my-zsh" ]; then
+  echo "Oh My Zsh is installed."
+else
+  echo "Oh My Zsh is not installed. downloading and installing now..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
 # https://stackoverflow.com/a/4749368/1341838
 if grep -Fxq "$(brew --prefix)/bin/zsh" '/etc/shells'; then
