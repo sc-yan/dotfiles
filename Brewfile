@@ -16,10 +16,6 @@ brew "asdf"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # C library implementing the SSH2 protocol
@@ -32,6 +28,10 @@ brew "boost"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Text processing system for reStructuredText
@@ -176,18 +176,16 @@ brew "tomanthony/brews/itermocil"
 cask "1password"
 # Redis desktop manager
 cask "another-redis-desktop-manager"
-# Manage team projects and tasks
-cask "asana"
 # Cloud storage service
 cask "baidunetdisk"
 # Voice and text chat software
 cask "discord"
 # Web browser
 cask "firefox"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Web browser
 cask "google-chrome"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
 # Client for the Google Drive storage service
 cask "google-drive"
 # UI for Kubernetes
