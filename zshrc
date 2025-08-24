@@ -167,4 +167,10 @@ export LDFLAGS="-L/opt/homebrew/opt/openssl/lib"
 export CFLAGS="-O2 -g"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl/include/"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+# cache terraform downloading
+export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 echo "zshrc file loaded"
+# https://github.com/pyenv/pyenv     Set up your shell environment for Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
